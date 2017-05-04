@@ -48,8 +48,7 @@ brew install mas # cli for the mac app store
 ```
 
 ```sh
-while read app_id; do
-  mas install $app_id
-done < echo $(grep -o '^[^#]*' mas/basic.txt | grep -v '^$')
+app_ids_without_comments=$(grep -o '^[^#]*' mas/basic.txt | grep -v '^$')
+echo $app_ids_without_comments | xargs mas install
 ```
 
