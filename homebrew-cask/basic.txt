@@ -8,6 +8,7 @@ hazel
 omnifocus
 plex-media-server
 slack
+skype
 spotify
 transmission
 tunnelbear

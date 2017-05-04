@@ -1,0 +1,10 @@
+charles
+cyberduck
+dash
+iterm2
+macvim
+paw
+pycharm
+sketch
+sublime-text
+tower
