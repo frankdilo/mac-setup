@@ -12,3 +12,4 @@ spotify
 transmission
 tunnelbear
 vlc
+vanilla
