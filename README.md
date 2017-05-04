@@ -32,3 +32,24 @@ while read app; do
 done < homebrew-cask/basic.txt
 ```
 
+
+
+```sh
+# Remove downloaded files and cleanup space
+brew cask cleanup
+```
+
+
+
+## Install Mac App Store apps
+
+```sh
+brew install mas # cli for the mac app store
+```
+
+```sh
+while read app_id; do
+  mas install $app_id
+done < mas/basic.txt
+```
+
