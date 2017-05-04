@@ -50,6 +50,6 @@ brew install mas # cli for the mac app store
 ```sh
 while read app_id; do
   mas install $app_id
-done < mas/basic.txt
+done < echo $(grep -o '^[^#]*' mas/basic.txt | grep -v '^$')
 ```
 
