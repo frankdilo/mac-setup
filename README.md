@@ -4,7 +4,9 @@ Scripts to setup new macs.
 
 
 
-## Install [Homebrew](https://brew.sh/) and [Cask](https://caskroom.github.io/)
+## Basic
+
+### Install [Homebrew](https://brew.sh/) and [Cask](https://caskroom.github.io/)
 
 ```sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew tap caskroom/cask
@@ -14,7 +16,7 @@ This will also download the Command Line Tools (`git`, etc.)
 
 
 
-## Clone this repo
+### Clone this repo
 
 ```sh
 mkdir projects
@@ -24,7 +26,7 @@ git clone https://github.com/frankdilo/mac-setup.git && cd mac-setup
 
 
 
-## Install casks
+### Install casks
 
 ```sh
 while read app; do
@@ -41,7 +43,7 @@ brew cask cleanup
 
 
 
-## Install Mac App Store apps
+### Install Mac App Store apps
 
 ```sh
 brew install mas # cli for the mac app store
@@ -51,4 +53,40 @@ brew install mas # cli for the mac app store
 app_ids_without_comments=$(grep -o '^[^#]*' mas/basic.txt | grep -v '^$')
 echo $app_ids_without_comments | xargs mas install
 ```
+
+
+
+## Development
+
+
+
+### Install homebrews
+
+```sh
+while read tool; do
+  brew install "$tool"
+done < homebrew/dev.txt
+```
+
+
+
+### Install casks
+
+```sh
+while read app; do
+  brew cask install "$app"
+done < homebrew-cask/dev.txt
+```
+
+
+
+
+
+### Install [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+
+
 

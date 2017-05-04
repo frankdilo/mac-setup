@@ -13,3 +13,4 @@ transmission
 tunnelbear
 vlc
 vanilla
+typora
