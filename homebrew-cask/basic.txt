@@ -1,0 +1,13 @@
+1password
+adobe-reader
+alfred
+caffeine
+google-chrome
+hazel
+omnifocus
+plex-media-server
+slack
+spotify
+transmission
+tunnelbear
+vlc

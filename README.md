@@ -22,3 +22,13 @@ cd projects
 git clone https://github.com/frankdilo/mac-setup.git && cd mac-setup
 ```
 
+
+
+## Install casks
+
+```sh
+while read app; do
+  brew cask install "$app"
+done < homebrew-cask/basic.txt
+```
+
