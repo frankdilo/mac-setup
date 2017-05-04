@@ -10,11 +10,15 @@ Scripts to setup new macs.
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew tap caskroom/cask
 ```
 
+This will also download the Command Line Tools (`git`, etc.)
 
 
-## Install `git` and get this repo
+
+## Clone this repo
 
 ```sh
-brew install git
+mkdir projects
+cd projects
+git clone https://github.com/frankdilo/mac-setup.git && cd mac-setup
 ```
 
